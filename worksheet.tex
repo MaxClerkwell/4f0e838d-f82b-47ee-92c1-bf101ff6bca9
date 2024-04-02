@@ -8,9 +8,9 @@
 
 \begin{document}
 
-The most useful features of GitHub and similar platforms are not only in storing your code, but also in sharing it.
-There are certain rules, we should know, in order for us to be effective collaborators in GitHub.
-Even though there are several different modes of collaborating, the one explained here is usually regarded as the most basic, yet effective one.
+GitHub and similar platforms offer useful features not only for storing code, but also for sharing it.
+To collaborate effectively on GitHub, you need to know a few rules.
+Although there are several modes of collaborating, the one explained here is probably the most general and effective.
 Our goal is to work with multiple people on the same project, therefore you should work with at least one partner in this exercise.
 
 \section*{Exercises}
@@ -22,39 +22,44 @@ Our goal is to work with multiple people on the same project, therefore you shou
 \end{aufgabe}
 
 \begin{aufgabe}
-    Exchange the links to your GitHub repository with your partner.
-    You should be able to see your partners project. 
-    Even though you could now just clone the repository and use it, you would work differently if you wanted to contribute to it.
-    See the button \textbf{Fork} in the top right corner?
-    Click it to create your own instance of the repository in your own GitHub account.
-    All partners should fork a repository of one other partner.
+   Begin by sharing the links to your GitHub repositories with your collaboration partners. This will allow each of you to access and view each other's projects. While directly cloning the repository is a straightforward method to start working with the project, there's a more collaborative approach that leverages GitHub's features.
+    
+    Notice the \textbf{Fork} button located at the top right corner of the repository page? Clicking on this button will create a copy of the repository under your own GitHub account. This process, known as forking, grants you your own version of the project to work on independently. Each member of the group should fork another partner's repository, ensuring that everyone has the opportunity to contribute to a different project.
+    
+    Forking is essential in scenarios where direct contributions to the original repository are restricted due to permissions—typically, you don't have the right to push changes to someone else's project. However, public repositories can always be forked, allowing you to make your modifications and subsequently suggest these changes to the original project. This suggestion is done through a pull request, which the original repository's owners can review. For this process to work effectively, ensure that your fork is set to be publicly accessible, allowing others to see and evaluate your contributions.
 \end{aufgabe}
 
 \begin{aufgabe}
-    Clone the forked repository from your own account on github. 
-    Make some changes to the \texttt{README.md} file and push the changes to your repository.
+    After successfully forking a partner's repository to your own GitHub account, the next step involves cloning this forked repository to your local machine. This enables you to work on the project directly from your own development environment. To clone the repository, use the git clone command followed by the URL of your forked repository. You can find this URL on your fork's GitHub page.
+    
+    Make some changes to the \texttt{README.md} file. Next, it's time to commit them and push the updates back to your repository on GitHub. Use the \texttt{git add README.md} command to stage your changes, followed by  \texttt{git commit -m} to commit them with a meaningful message. Finally, push your changes using \texttt{git push}. 
+    
     After pushing the changes, inspect the GitHub-webpage of your own fork.
 \end{aufgabe}
 
 \begin{aufgabe}
-    The changes you made are now still local to your own fork, but we'd like to upstream the changes we've made. 
-    This is typically done, if we believe, that our changes are a relevant contribution to the project.
-    In order to do this, we need to create a pull request.
-    This should be done by all partners in this exercise.
-    Creating a pull-request opens a new webpage.
-    Use this page, to tell the partner about the recent changes, and why you believe, that this change is relevant.
-    Your partner will get a notification about the pull-request in their repository. 
+    With the changes you've made now present in your fork, it's time to consider contributing them back to the original project. This step is taken when you believe your modifications could benefit the project as a whole. To initiate this process, we want to create a Pull request that your partner can decide on.
+    
+    Your fork has two additional buttons: A \textbf{contribute} and a \textbf{sync} button. With the \textbf{contribute}-Button, you get a setup for a Pull Request that chooses the main branch on your partner's repo as the target branch.
+    
+    Use this page, to tell the partner about the recent changes, and why you believe, that this change is relevant. This involves writing a description of your changes and why they should consider accepting your PR. Though this feels a little over-the-top right now, this is one of the most important parts of collaboration.
+    
+    When you are finished, your partner will get a notification about the Pull request in their repository. 
 \end{aufgabe}
 
-\begin{abstract}
-    Go back to your own repository, that your partner forked. 
-    Look at the pull-request tab on the top. 
-    Go into the pull-request view, review the changes and if you are fine with them, merge them into your own repository!
-\end{abstract}
+\begin{aufgabe}
+    Go back to your own repository which your partners forked. You should have received their pull-requests at this point.
+    
+    To see them, navigate to the pull-request view of your repository via the pull-request tab on the top. 
+
+    Select you partner's pull-request and review it. There are multiple options to request changes, review commits and have discussions about the contribution.
+    
+    Finally, if you are fine with them, merge them into your own repository!
+\end{aufgabe}
 
 \section*{Annotations}
 \begin{enumerate}
-    \item Link zu einem YouTube-Video: \url{https://www.youtube.com}
+    \item Forking \& Contributing: \url{https://www.youtube.com/watch?v=HbSjyU2vf6Y}
 \end{enumerate}
 
 \end{document}
